@@ -1,0 +1,1 @@
+web: gunicorn collins-iloabuchi-hngi9.wsgi --log-file -
