@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-mta$gx-^5_3&^ni1zl#b==aqa7l@$-nr@hc#+gtl!m0=chig7r
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'www.collins-iloabuchi-hngi9.herokuapp.com/'
+    'collins-iloabuchi-hngi9.herokuapp.com/'
 ]
 
 
@@ -47,8 +47,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,3 +134,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_heroku.settings(locals())
+
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
