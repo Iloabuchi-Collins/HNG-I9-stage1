@@ -29,8 +29,7 @@ SECRET_KEY = 'django-insecure-mta$gx-^5_3&^ni1zl#b==aqa7l@$-nr@hc#+gtl!m0=chig7r
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    '*'
+    'collins-iloabuchi-hngi9.herokuapp.com/'
 ]
 
 
