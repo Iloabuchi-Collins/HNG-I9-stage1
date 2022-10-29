@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath hngproject.wsgi --log-file -
+web: waitress-serve --port=$PORT hngproject.wsgi:application
