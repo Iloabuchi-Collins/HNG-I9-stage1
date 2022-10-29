@@ -1,1 +1,1 @@
-web: gunicorn hngproject.wsgi --log-file -
+web: gunicorn --pythonpath hngproject.wsgi --log-file -
