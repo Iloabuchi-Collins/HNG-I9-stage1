@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'collins-iloabuchi-hngi9.herokuapp.com/'
+    '*' 
 ]
 
 
