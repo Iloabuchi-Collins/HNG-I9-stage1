@@ -6,5 +6,5 @@ class SlackUserSerializer(serializers.ModelSerializer):
         model = SlackUser
         fields = 'slackUsername', 'backend', 'age', 'bio'
         extra_kwargs = {
-            'id': {'read_only'}: True
+            'id': {'read_only': True}
         }
